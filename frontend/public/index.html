@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a192f" />
+    <meta
+      name="description"
+      content="Project Dashboard - Aesthetic Neon Blue Task Management System"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <title>Neon Dashboard | Task Manager</title>
+    
+    <style>
+      /* Global neon theme styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: 'Space Mono', 'Courier New', monospace;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #0a0a0a 0%, #0a192f 100%);
+        min-height: 100vh;
+        color: #ccddee;
+      }
+      
+      /* Neon scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: rgba(10, 25, 47, 0.8);
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #00ffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00ccff;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+      }
+      
+      /* Selection color */
+      ::selection {
+        background: rgba(0, 255, 255, 0.3);
+        color: #00ffff;
+      }
+      
+      ::-moz-selection {
+        background: rgba(0, 255, 255, 0.3);
+        color: #00ffff;
+      }
+      
+      /* Focus styles */
+      :focus {
+        outline: none;
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Neon glow animation */
+      @keyframes neonPulse {
+        0% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      /* Loading animation */
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Custom neon cursor (optional) */
+      button, a, [role="button"] {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    
+    <noscript>
+      <div style="
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #00ffff;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        font-family: monospace;
+      ">
+        <h1>NEON DASHBOARD</h1>
+        <p>JavaScript is required to run this application.</p>
+        <p>Please enable JavaScript in your browser settings.</p>
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
